@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link rel="shortcut icon" href="/images/infinity_logo.png" type="image/x-icon" />
+        <title>Error <%= error.status %> - <%= message %></title>
+    </head>
+    <body>
+        <div class="brandingcontainer">
+            <div class="branding hoverwhiteborder">
+                <img src="/images/infinity_logo_blurred_no_border.png" alt="Infinity Development" class="brandingicon" onclick="window.location.href='https://infinitydev.org.uk'"/>
+                <p class="brandingtext"><span onclick="window.location.href='https://infinitydev.org.uk'" style="z-index: 2;">infinitydev</span>/<span onclick="window.location.href='/'">api</span>/error</p>
+            </div>
+        </div>
+        <div class="centercontainer errorcontainer">
+            <h1 class="errormsg" id="errorpagetitle"><%= error.status %> - <%= message %> </h1>
+            <p><%= error.stack %>
+                <br><a onclick="history.back()">Tap to return to previous page</a>
+            </p>
+        </div>
+        
+    </body>
+    <script> // in case an error means files are not accessible
+        setTimeout(function() {window.location.reload()}, 10000);
+    </script>
+</html>

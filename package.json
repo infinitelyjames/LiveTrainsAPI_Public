@@ -1,0 +1,28 @@
+{
+  "name": "livetrainsapi",
+  "version": "1.0.0",
+  "description": "An API wrapper for Network Rail, National Rail and other related APIs",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "production": "echo \"Running in Production Mode\" && node index.js",
+    "start": "echo \"Running in Production Mode\" && node index.js",
+    "test": "echo \"Running with additional test information\" && nodemon index.js --test",
+    "debug": "echo \"Running in Debug Mode\" && node --inspect index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "national-rail-darwin": "^1.0.8",
+    "nodemon": "^3.0.1",
+    "soap": "^1.0.1"
+  }
+}
