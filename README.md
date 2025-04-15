@@ -6,7 +6,7 @@ Note: This requires you to have a standard national rail darwin API key.
 
 ## Get started
 
-Enter the relevant details into config.js and index.js
+Enter the relevant details into config.js and index.js, and your NRE_API_KEY in `.env`.
 
 ## The App
 
