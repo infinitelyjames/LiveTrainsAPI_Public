@@ -20,7 +20,7 @@
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "helmet": "^7.0.0",
-    "morgan": "^1.10.0",
+    "morgan": "^1.10.1",
     "national-rail-darwin": "^1.0.8",
     "nodemon": "^3.0.1",
     "soap": "^1.0.1"
